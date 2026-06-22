@@ -115,3 +115,17 @@ The Bundle socket is **pink** (`#FF5AAD`).
 - An **array of objects** is a Bundle holding the whole list (SQUARE socket) → use **Loop For Bundle** / **Index Bundle Array** / **Bundle Search** to read elements. A Separate on it shows "Empty or unknown bundle" on purpose. Flat arrays (strings/numbers) are a plain List socket.
 - **Bundle Search** reads the array at the top level (JSON / portal / Separate chain); it can't read a bundle that only exists inside a loop iteration.
 - Name mode (**Index Bundle Array** / **Bundle Search**) needs items to have a `"name"` key — the node warns if they don't.
+
+---
+
+## Changelog
+
+### v1.0.0 — 2026-06-22
+- Initial public release.
+- Core nodes: Combine Bundle, Separate Bundle, Bundle Portal, Merge Bundles.
+- Utils: Bundle Length, Index Bundle Array, Bundle Get Key, Bundle Keys, Array To Bundle, Bundle To Array, Filter Bundle Array.
+- Interface nodes: Bundle Search, Bundle UI List, Display Bundle.
+- JSON nodes: JSON Read, JSON Write, JSON Edit Key.
+- Loop nodes: Loop For Bundle (Execute/Interface), Loop Repeat Bundle (Execute/Interface).
+- Pink Bundle socket (`#FF5AAD`) with diamond (object) and square (array) variants.
+- Cycle-safe Separate Bundle detection through portals and loops.
