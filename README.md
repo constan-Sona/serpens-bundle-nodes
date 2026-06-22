@@ -16,6 +16,7 @@ Custom nodes for the [Serpens](https://blendermarket.com/products/serpens) addon
 | **Separate Bundle** | Auto-mirrors a bundle source and unpacks it (Combine, JSON, Loop item, Index item, or another Separate's nested output). |
 | **Bundle Portal** | Sends a bundle without a wire, matched by name. Toggle In / Out with the same name to carry the bundle across the node tree. |
 | **Merge Bundles** | Merges two bundles into one. |
+| **Print Bundle** | Prints all key/value pairs of a bundle in the Execute flow — on the node and in the console. Supports nested bundles. "Print On Node" toggle + clear button. |
 
 ### Utils
 
@@ -119,6 +120,9 @@ The Bundle socket is **pink** (`#FF5AAD`).
 ---
 
 ## Changelog
+
+### v1.1.0 — 2026-06-22
+- **New node: Print Bundle** (Add → Bundle). Takes a Bundle input and an Execute flow; prints all key/value pairs on the node and in the console. Supports nested bundles. "Print On Node" toggle and clear button, same as the regular Print node.
 
 ### v1.0.0 — 2026-06-22
 - Initial public release.
